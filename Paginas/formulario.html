@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario</title>
+<meta charset="UTF-8">
+<link rel="stylesheet prefetch" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="../style/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div id="contenedor_general" class="container"><!--contendor general-->
+  <div class="row"> <!--definimos el contenedor donde estaran la caja de los formularios-->
+    
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3"><!--ajustamos el tamaño de la caja donde esta el formulario 1-->
+      <form  id="formulario1" role="form" method="post"  action="../Acciones/registrar.php">
+        <center>
+          <img id="logo"  width="160px" height="140px" src="../img/logo_SINIIGA.gif">
+        </center>
+        <h4>CEDULA DE IDENTIFICAION ESPECIE (BOVINA, OVINA Y CAPRINA)</h4>
+        <div id="caja_1" class="row">
+          <div class="col-xs-4 col-sm-4 col-md-4"><!--caja del campo upp-->
+            <div class="form-group">
+              <label for="etclaveUpp">Clave UPP</label>
+              <input type="text" name="claveUpp" id="claveUpp" class="form-control" placeholder="Clave UPP" size="20" tabindex="1">
+            </div>
+          </div>
+          <!--fin del campo upp-->
+          
+          <div class="col-xs-8 col-sm-8 col-md-8"><!--caja del campo nombre del productor-->
+            <div class="form-group">
+              <label for="etnombrePro">Nombre del productor</label>
+              <input type="text" name="nombrePro" id="nombrePro" class="form-control" placeholder="Nombre del productor" size="35" tabindex="2">
+            </div>
+          </div>
+          <!--fin caja del campo nombre del productor-->
+          
+          <div class="col-xs-6 col-sm-6 col-md-6"><!--caja del campo nombre del predio-->
+            <div class="form-group">
+              <label for="etnombrePred">Nombre del predio</label>
+              <input type="text" name="nombrePred" id="nombrePred" class="form-control" placeholder="Nombre del predio" tabindex="3">
+            </div>
+          </div>
+          <!--fin de la caja del campo nombre predio-->
+          
+          <div class="col-xs-6 col-sm-6 col-md-6"><!--caja del campo nombre del tecnico-->
+            <div class="form-group">
+              <label for="nombreTec">Nombre del Técnico</label>
+              <input type="text" name="nombreTec" id="nombreTec" class="form-control" placeholder="Nombre del Tecnico"  tabindex="4">
+            </div>
+          </div>
+          <!--fin de la caja nombre del tecnico-->
+          
+          <div class="col-xs-4 col-sm-4 col-md-4"><!--caja del campo serie del-->
+            <div class="form-group">
+              <label for="seriedel">Serie del</label>
+              <input type="text" name="seriedel" id="seriedel" class="form-control" placeholder="Serie del"  tabindex="5">
+            </div>
+          </div>
+          <!--fin de la caja del campo serie del-->
+          
+          <div class="col-xs-4 col-sm-4 col-md-4"><!--caja del campo Al-->
+            <div class="form-group">
+              <label for="al">Al</label>
+              <input type="text" name="al" id="al" class="form-control" placeholder="Al"  tabindex="6">
+            </div>
+          </div>
+          <!--fin del campo de la caja Al-->
+          
+          <div class="col-xs-4 col-sm-4 col-md-4"><!--caja del campo total de paquetes-->
+            <div class="form-group">
+              <label for="totalPaq">Total de paquetes com.</label>
+              <input type="text" name="totalPaq" id="totalPaq" class="form-control" placeholder="Total de paquetes comp"  tabindex="7">
+            </div>
+          </div>
+          <!--fin de la caja del campo total de paquetes-->
+          
+          <div class="col-xs-4 col-sm-4 col-md-4"><!--caja del campo fecha-->
+            <div class="form-group">
+              <label for="fechaAre">Fecha de aretado</label>
+              <input type="date" name="fechaAre" id="fechaAre" class="form-control"   tabindex="8">
+            </div>
+          </div>
+          <!--fin de la caja del campo fecha--> 
+        </div>
+        <!--fin de la caja1--> 
+        <br>
+        <div id="caja_2" class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12"><!--caja del campo numero de siniiga-->
+            <label>* Campos obligatorio</label>
+            <div class="form-group">
+              <label for="numSiniiga">No. SINIIGA*</label>
+              <input type="text" name="numSiniiga" id="numSiniiga" class="form-control" placeholder="No. SINIIGA" size="20" tabindex="9" required>
+            </div>
+          </div>
+          <!--fin de la caja del campo numero de siniiga-->
+          
+          <div class="col-xs-12 col-sm-12 col-md-12"><!--caja del campo arete de campaña-->
+            <div class="form-group">
+              <label for="areteCam">Arete Campaña*</label>
+              <input type="text" name="areteCam" id="areteCam" class="form-control" placeholder="Arete Campaña" size="20" tabindex="10" required>
+            </div>
+          </div>
+          <!--fin de la caja deñ campo arete de campaña-->
+          
+          <div class="col-xs-12 col-sm-12 col-md-12"><!--caja del campo de fecha de nacimiento-->
+            <div class="form-group">
+              <label for="numSiniiga">Fecha de Nac. MM-AA*</label>
+              <input type="month" name="fechaNac" id="fechaNac" value="MM-AA" class="form-control" tabindex="11" required>
+            </div>
+          </div>
+          <!--fin de la caja del campo de fecha de nacimiento-->
+          
+          <div class="col-xs-12 col-sm-12 col-md-12"><!--caja de las opciones de sexo-->
+            <div class="form-group">
+              <label for="sexo">Sexo*</label>
+              <br>
+              <label class="radio-inline">
+                <input type="radio" name="sexo" value="Macho" tabindex="12" required>
+                Macho</label>
+              <label class="radio-inline">
+                <input type="radio" name="sexo" value="Hembra" tabindex="13" >
+                Hembra</label>
+            </div>
+          </div>
+          <!--fin de la caja de las opciones de sexo-->
+          
+          <div class="col-xs-12 col-sm-12 col-md-12"><!--caja del campo raza-->
+            <div class="form-group">
+              <label for="raza">Raza*</label>              
+              <select name="raza" id="raza" class="form-control" tabindex="14" required>  
+              <option selected>-----Seleccione una opción-----</option> 
+              <option>Pura</option>
+              <option>Cruza</option>
+              <option>Criollo</option>
+              </select>
+</div>
+          </div>
+          <!--fin de la caja del campo raza-->
+          
+          <div class="col-xs-12 col-sm-12 col-md-12"><!--caja del especificar cruza-->
+            <div class="form-group">
+              <label for="espesifCruza">Especificar Cruza (Raza/Cruza)*</label>
+              <input type="text" name="cruza" id="cruza" placeholder="Especificar Cruza" class="form-control" tabindex="15" required>
+            </div>
+          </div>
+          <!--fin de la caja del campo especificar cruza-->
+          
+          <div class="col-xs-12 col-sm-12 col-md-12"><!--caja del campo empadre-->
+            <div class="form-group">
+              <label for="empadre">Empadre</label>
+              <select name="empadre" id="empadre" class="form-control" tabindex="16" required>  
+              <option selected>-----Seleccione una opción-----</option> 
+              <option>Monta natural</option>
+              <option>Inseminación artificial</option>
+              <option>Transferencia embrionaria</option>
+              </select>
+            </div>
+          </div>
+          <!--fin de la caja del campo empadre-->
+          
+          <div class="col-xs-12 col-sm-12 col-md-12"><!--caja del la etiqueta raza o siniiga-->
+            <div class="form-group">
+              <label for="razaPM">Raza o No. SIGIINA</label>
+            </div>
+          </div>
+          <!--fin de la caja de la etiqueta raza o siniiga-->
+          
+          <div class="col-xs-12 col-sm-12 col-md-12"><!--caja del campo raza padre-->
+            <div class="form-group">
+              <label for="razpadre">Padre</label>
+              <input type="text" name="razapadre" id="razapadre" placeholder="Padre" class="form-control" tabindex="17">
+            </div>
+          </div>
+          <!--fin de la caja del campo raza padre-->
+          
+          <div class="col-xs-12 col-sm-12 col-md-12"><!--caja del campo raza madre-->
+            <div class="form-group">
+              <label for="razmadre">Madre</label>
+              <input type="text" name="razamadre" id="razamadre" placeholder="Madre" class="form-control" tabindex="18">
+            </div>
+          </div>
+          <!--fin de la caja del campo raza madre-->
+          
+          <div class="col-xs-12 col-sm-12 col-md-12"><!--caja del boton guardar-->
+            <div class="form-group">
+              <input type="submit" name="enviar" id="enviar" value="Guardar" class="btn btn-success" >
+              <a id="regresar" href="../index.html" class="btn btn-primary" role="button" name="regresar">Regresar</a>
+            </div>
+          </div><!--fin de la caja del boton guardar-->           
+        </div>
+      </form>
+    </div>
+  </div>
+  <!--fin del contenedor donde estan la caja de los formularios--> 
+</div>
+<!-- fin del contenedor general--> 
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</body>
+</html>
